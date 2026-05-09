@@ -48,7 +48,7 @@ youtube-search-python
 # ============================================================================
 # SPATIAL AUDIO MODULE (NEW - Added for binaural/Dolby processing)
 # ============================================================================
-scipy==1.11.1
+scipy
 soundfile==0.12.1
 librosa==0.10.0
 aiofiles==23.1.0
