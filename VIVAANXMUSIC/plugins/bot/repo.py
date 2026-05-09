@@ -4,7 +4,7 @@ from VIVAANXMUSIC import app
 from config import BOT_USERNAME
 
 repo_caption = """**
-🚀 ᴄʟᴏɴᴇ ᴀɴᴅ ᴅᴇᴘʟᴏʏ – 𝐕ɪᴠᴀᴀɴ 𝐍ᴇᴛᴡᴏʀᴋ ʀᴇᴘᴏ 🚀
+🚀 ᴄʟᴏɴᴇ ᴀɴᴅ ᴅᴇᴘʟᴏʏ – BETA BOT 𝐍ᴇᴛᴡᴏʀᴋ  🚀
 
 ➤ ᴅᴇᴘʟᴏʏ ᴇᴀsɪʟʏ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ᴇʀʀᴏʀꜱ  
 ➤ ɴᴏ ʜᴇʀᴏᴋᴜ ʙᴀɴ ɪꜱꜱᴜᴇ  
@@ -20,12 +20,11 @@ async def show_repo(_, msg):
     buttons = [
         [InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ✨", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
         [
-            InlineKeyboardButton("👑 ᴏᴡɴᴇʀ", url="https://t.me/EliteSid"),
-            InlineKeyboardButton("💬 ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/VivaanSupport")
+            InlineKeyboardButton("👑 ᴏᴡɴᴇʀ", url="https://t.me/ll_DEVIL_SHIV_ll"),
+            InlineKeyboardButton("💬 ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/betabot_hub")
         ],
         [
-            InlineKeyboardButton("🛠️ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="https://t.me/VivaanSupport"),
-            InlineKeyboardButton("🎵 ɢɪᴛʜᴜʙ", url="https://github.com/VivaanNetworkDev/VivaanXmusic3.0")
+            InlineKeyboardButton("🛠️ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="https://t.me/betabot_support"),
         ]
     ]
 
@@ -33,7 +32,7 @@ async def show_repo(_, msg):
 
     try:  
         await msg.reply_photo(
-            photo="https://files.catbox.moe/22oahi.jpg",
+            photo="https://files.catbox.moe/ubyk6k.jpg",
             caption=repo_caption,
             reply_markup=reply_markup
         )
