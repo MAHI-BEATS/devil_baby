@@ -25,7 +25,7 @@ from VIVAANXMUSIC.utils.decorators.language import LanguageStart
 from VIVAANXMUSIC.utils.formatters import get_readable_time
 from VIVAANXMUSIC.utils.inline.start import private_panel, start_panel
 from VIVAANXMUSIC.utils.inline.help import first_page
-from config import BANNED_USERS, AYUV, HELP_IMG_URL, START_IMG_URL, STICKERS
+from config import BANNED_USERS, AYUV, HELP_IMG_URL, START_VIDS, STICKERS
 from strings import get_string
 
 
@@ -71,7 +71,7 @@ async def start_pm(client, message: Message, _):
             return
 
         if name.startswith("inf"):
-            m = await message.reply_text("SEARCHING BABY 🔎")
+            m = await message.reply_text("🔎")
             try:
                 vid_id = str(name).replace("info_", "", 1)
                 query = f"https://www.youtube.com/watch?v={vid_id}"
@@ -131,8 +131,8 @@ async def start_pm(client, message: Message, _):
         served_chats_coro, served_users_coro, stats_coro
     )
 
-    await message.reply_photo(
-        random.choice(START_IMG_URL),
+    await message.reply_video(
+        random.choice(START_VIDS),
         caption=random.choice(AYUV).format(
             message.from_user.mention, app.mention, UP, DISK, CPU, RAM, len(served_users), len(served_chats)
         ),
@@ -157,8 +157,8 @@ async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
     try:
-        await message.reply_photo(
-            random.choice(START_IMG_URL),
+        await message.reply_video(
+            random.choice(START_VIDS),
             caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
             reply_markup=InlineKeyboardMarkup(out),
         )
@@ -197,8 +197,8 @@ async def welcome(client, message: Message):
                     return await app.leave_chat(message.chat.id)
 
                 out = start_panel(_)
-                await message.reply_photo(
-                    random.choice(START_IMG_URL),
+                await message.reply_video(
+                    random.choice(START_VIDS),
                     caption=_["start_3"].format(
                         message.from_user.mention,
                         app.mention,
