@@ -25,7 +25,7 @@ from VIVAANXMUSIC.utils.decorators.language import LanguageStart
 from VIVAANXMUSIC.utils.formatters import get_readable_time
 from VIVAANXMUSIC.utils.inline.start import private_panel, start_panel
 from VIVAANXMUSIC.utils.inline.help import first_page
-from config import BANNED_USERS, AYUV, HELP_IMG_URL, START_VIDS, STICKERS
+from config import BANNED_USERS, AYUV, HELP_IMG_URL, START_IMG_URL, STICKERS
 from strings import get_string
 
 
@@ -71,7 +71,7 @@ async def start_pm(client, message: Message, _):
             return
 
         if name.startswith("inf"):
-            m = await message.reply_text("🔎")
+            m = await message.reply_text("SEARCHING BABY 🔎")
             try:
                 vid_id = str(name).replace("info_", "", 1)
                 query = f"https://www.youtube.com/watch?v={vid_id}"
