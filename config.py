@@ -71,7 +71,7 @@ STRING4 = getenv("STRING_SESSION4")
 STRING5 = getenv("STRING_SESSION5")
 
 # ── Media assets ───────────────────────────────────────────────────────────────
-START_VIDS = [
+START_IMG_URL = [
     "https://files.catbox.moe/49spk2.jpg",
     "https://files.catbox.moe/fj3cfe.jpg",
     "https://files.catbox.moe/fj3cfe.jpg",
